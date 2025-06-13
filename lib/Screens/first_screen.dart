@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:user_info/Screens/second_screen.dart';
-import 'package:user_info/Utils/WidgetScreen.dart';
+import 'package:user_info/Utils/Widget_screen.dart';
 import 'package:user_info/Utils/app_string.dart';
 import 'package:user_info/Utils/app_colors.dart';
 import 'package:user_info/Utils/get_controller.dart';
