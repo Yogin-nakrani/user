@@ -84,12 +84,12 @@ class ImagePickFromGalleryState extends State<ImagePickFromGallery> {
 
 
     _pickImagefromGallery ()async{
-final XFile?  Image = await singleImage.pickImage(source: ImageSource.gallery);
-if(Image != null){
+final XFile?  image = await singleImage.pickImage(source: ImageSource.gallery);
+if(image != null){
 
 
 setState(() {
-  selectedImage = File(Image.path);
+  selectedImage = File(image.path);
 });
 widget.onImagePicked(selectedImage!);
   
@@ -133,11 +133,9 @@ void clearImg(){
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 20.0),
-      child: Container(
-        
       child: Column(
         children: [
-          Container(
+          SizedBox(
             width: 150,
             child: InkWell(
               onTap: _pickImagefromGallery,
@@ -159,7 +157,7 @@ void clearImg(){
           
             SizedBox(height: 20,),
             
-            Container(
+            SizedBox(
               width: 150,
               child: InkWell(
                 onTap: () {
@@ -179,7 +177,7 @@ void clearImg(){
             ),
              Padding(
                padding: const EdgeInsets.only(top: 10.0),
-               child: Container(
+               child: SizedBox(
                 height: 200,
                 // width: double.infinity,
                  child: ListView.builder(
@@ -190,7 +188,7 @@ void clearImg(){
                     
                               return Padding(
                                 padding: const EdgeInsets.only(left:10.0),
-                                child: Container(
+                                child: SizedBox(
                                   child:Image.file(File(imageList[index].path),fit: BoxFit.cover,) ,
                                 ),
                               );
@@ -199,12 +197,11 @@ void clearImg(){
                         }),
                ),
              ) 
-
-
-
+      
+      
+      
         ],
       ),
-        ),
     );
   }
 }

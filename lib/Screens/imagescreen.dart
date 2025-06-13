@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:user_info/Screens/fullscreen.dart';
-import 'package:user_info/Utils/getController.dart';
+import 'package:user_info/Utils/get_controller.dart';
 import 'package:get/get.dart';
 
 
@@ -34,16 +34,11 @@ appBar: AppBar(title: Text("Image Preview"),),
           onTap: (){
             Get.to(()=> Fullscreen(imagepath: imagePath));
           },
-          child: Container(
-            child: Center(
-              child: 
-             Image.file(File(imagePath),fit: BoxFit.cover,) 
-          
-          
-            ),
-          
-          
-          
+          child: Center(
+            child: 
+           Image.file(File(imagePath),fit: BoxFit.cover,) 
+                    
+                    
           ),
         );
 

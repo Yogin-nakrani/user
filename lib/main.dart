@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:user_info/Screens/FirstScreen.dart';
 
 import 'Screens/getx_demo.dart';
 import 'config/app_controller_bindings.dart';

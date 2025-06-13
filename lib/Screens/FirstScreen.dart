@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:user_info/Screens/secondScreen.dart';
+import 'package:user_info/Screens/second_screen.dart';
 import 'package:user_info/Utils/WidgetScreen.dart';
-import 'package:user_info/Utils/app_String.dart';
+import 'package:user_info/Utils/app_string.dart';
 import 'package:user_info/Utils/app_colors.dart';
-import 'package:user_info/Utils/getController.dart';
+import 'package:user_info/Utils/get_controller.dart';
 import 'package:get/get.dart';
 import 'dart:io';
 

@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:user_info/Utils/app_colors.dart';
 import 'dart:io';
-import 'package:user_info/Utils/widgetScreen.dart';
-import 'package:user_info/Utils/getController.dart';
+import 'package:user_info/Utils/widget_screen.dart';
+import 'package:user_info/Utils/get_controller.dart';
 
 class UpdateScreen extends StatefulWidget {
   const UpdateScreen({super.key});
@@ -16,7 +16,7 @@ class UpdateScreen extends StatefulWidget {
 class _UpdateScreenState extends State<UpdateScreen> {
   final ToDoController controller = Get.find();
 
-  ImagePicker _pickImage = ImagePicker();
+  final ImagePicker _pickImage = ImagePicker();
 
   List<String> _images = [];
 
@@ -47,7 +47,6 @@ class _UpdateScreenState extends State<UpdateScreen> {
       setState(() {
         _selectedImage = File(image?.path ?? "");
 
-        print('NewImage Path: ${_selectedImage!.path}');
       });
     }
   }
@@ -61,7 +60,6 @@ class _UpdateScreenState extends State<UpdateScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final tasks = controller.tasks;
 
     return Scaffold(
         appBar: AppBar(

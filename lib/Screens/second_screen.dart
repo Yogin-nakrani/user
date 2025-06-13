@@ -3,8 +3,8 @@ import 'package:user_info/Screens/imagescreen.dart';
 
 import 'package:flutter/material.dart';
 import 'package:user_info/Screens/update_screen.dart';
-import 'package:user_info/Utils/getController.dart';
-import 'package:user_info/Utils/widgetScreen.dart';
+import 'package:user_info/Utils/get_controller.dart';
+import 'package:user_info/Utils/widget_screen.dart';
 
 import 'package:get/get.dart';
 
@@ -48,7 +48,7 @@ class _SecondscreenState extends State<Secondscreen> {
         title: AllWidgets().title("Information Preview"),
         centerTitle: true,
       ),
-      body: Container(
+      body: SizedBox(
           child: Obx(
         () => ListView.builder(
             itemCount: tasks.length,
