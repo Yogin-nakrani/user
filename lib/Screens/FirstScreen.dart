@@ -44,7 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           )
         ],
-        title: AllWidgets().title("User Info"),
+        title: AllWidgets().title("User Info get from user's device"),
         centerTitle: true,
       ),
       body: Padding(
